@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="w-screen h-screen">
       
-      <BrowserRouter>
+      
       <Routes>
         <Route path="/" element={<>
           <Navbar/>
@@ -43,7 +43,7 @@ function App() {
         <Route path="/Shopping Cart Application Using React Redux" element={<Project6Details/>}/>
 
       </Routes>      
-      </BrowserRouter>
+ 
       
     </div>
   )
