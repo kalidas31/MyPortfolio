@@ -1,93 +1,103 @@
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
-//import { faLinkedin,faGithub,faHackerrank } from "@fortawesome/free-brands-svg-icons";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const section = [
+    { sec: "home", name: "Home" },
+    { sec: "about", name: "About" },
+    { sec: "skills", name: "Skills" },
+    { sec: "resume", name: "Resume" },
+    { sec: "projects", name: "Projects" },
+  ];
+
   function scrollIntoSection(sec) {
     document.getElementById(sec).scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false); // Close menu on mobile after clicking
   }
+
   useEffect(() => {
-    const handleScroll=()=>{
-        if(window.scrollY>10){
-            setIsScrolled(true);
-        }
-        else
-            setIsScrolled(false);
-    }
-    window.addEventListener("scroll",handleScroll);
-    return ()=>window.removeEventListener("scroll",handleScroll);
-  });
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className={`bg-black fixed h-20 w-full  ${isScrolled ? "shadow-lg shadow-gray-700":"shadow-none"}  z-50`}>
-      <nav className="flex justify-between items-center ">
-        <div className="pl-8 flex items-center">
-          
-          <span className="text-white font-bold text-3xl cursor-pointer duration-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent">
-            MyFolio
-          </span>
+    <div
+      className={`bg-black fixed w-full z-50 ${
+        isScrolled ? "shadow-lg shadow-gray-700" : "shadow-none"
+      }`}
+    >
+      <nav className="flex justify-between items-center py-4 px-6 md:px-8 relative">
+        {/* Logo */}
+        <div className="text-white font-bold text-3xl z-20 cursor-pointer">
+          MyFolio
         </div>
 
-        <ul className="text-white text-l s flex justify-center items-center gap-8 p-8 cursor-pointer">
-          <li>
-            <Link
-              to="/"
-              onClick={() => scrollIntoSection("home")}
-              className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
+        {/* Centered Navigation (Desktop) */}
+        <div className="hidden md:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
+          {section.map((sec) => (
+            <span
+              key={sec.sec}
+              onClick={() => scrollIntoSection(sec.sec)}
+              className="cursor-pointer text-white text-lg font-semibold hover:bg-gradient-to-r hover:from-blue-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent transition duration-300"
             >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              onClick={() => scrollIntoSection("about")}
-              className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              onClick={() => scrollIntoSection("skills")}
-              className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              onClick={() => scrollIntoSection("resume")}
-              className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
-            >
-              Resume
-            </Link>
-          </li>
+              {sec.name}
+            </span>
+          ))}
+        </div>
 
-          <li>
-            <Link
-              to="/"
-              onClick={() => scrollIntoSection("projects")}
-              className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
-            >
-              Projects
-            </Link>
-          </li>
-        </ul>
-        <span className="text-white font-bold text-xl pr-8 duration-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent">
-          <Link
-            to="/"
+        {/* Contact Me (Right - Desktop) */}
+        <div className="hidden md:block z-20">
+          <button
             onClick={() => scrollIntoSection("contact")}
-            className="!text-white duration-300 hover:!bg-gradient-to-r hover:!from-blue-500 hover:!to-pink-500 hover:!bg-clip-text hover:!text-transparent"
+            className="text-white text-lg font-semibold hover:bg-gradient-to-r hover:from-blue-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent transition duration-300"
           >
             Contact Me
-          </Link>
-        </span>
+          </button>
+        </div>
+
+        {/* Mobile Hamburger Icon */}
+        <div className="md:hidden z-20">
+          {isOpen ? (
+            <FaTimes
+              className="text-white text-2xl cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            />
+          ) : (
+            <FaBars
+              className="text-white text-2xl cursor-pointer"
+              onClick={() => setIsOpen(true)}
+            />
+          )}
+        </div>
       </nav>
+
+      {/* Mobile Navigation Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black w-full py-10 text-center flex flex-col space-y-6 text-white text-xl font-semibold">
+          {section.map((sec) => (
+            <button
+              key={sec.sec}
+              onClick={() => scrollIntoSection(sec.sec)}
+              className="hover:text-pink-400"
+            >
+              {sec.name}
+            </button>
+          ))}
+          <button
+            onClick={() => scrollIntoSection("contact")}
+            className="hover:text-pink-400"
+          >
+            Contact Me
+          </button>
+        </div>
+      )}
     </div>
   );
 }

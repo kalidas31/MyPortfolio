@@ -37,8 +37,8 @@ function App() {
         
         <Route path="/Emloyee Performance Appraisal System" element={<Project1Details/>}/>
         <Route path="/parkinsonsDisease" element={<Project2Details/>}/>
-        <Route path="/MERN Stactk Blog Application" element={<Project3Details/>}/>
-        <Route path="/Food Recipies Website Using API" element={<Project4Details/>}/>
+        <Route path="/MERN Stack Blog Application" element={<Project3Details/>}/>
+        <Route path="/Food Recipes Website Using API" element={<Project4Details/>}/>
         <Route path="/Expense Tracker Application" element={<Project5Details/>}/>
         <Route path="/Shopping Cart Application Using React Redux" element={<Project6Details/>}/>
 
