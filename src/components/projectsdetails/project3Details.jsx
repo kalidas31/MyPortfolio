@@ -16,17 +16,17 @@ export default function Project3Details() {
         Go To Projects
       </Link>
 
-      <div className="w-full max-w-screen-lg border border-white rounded-lg m-4 sm:m-8 shadow-[0_0_15px_3px_#3b82f6]">
+      <div className="w-full max-w-screen-lg border border-white rounded-lg m-4 sm:m-8 shadow-[0_0_15px_3px_#3b82f6] ">
         <section className="mt-4 mb-8 text-center">
           <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent">
             MERN Stack Blog Application
           </span>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Project Introduction</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto rounded-lg"></div>
+          <p className="text-left ml-8">
             The MERN Stack Blog Application is a full-stack web application
             built using MongoDB, Express.js, React.js, and Node.js. It allows
             users to create, edit, delete, and view blog posts. The application
@@ -36,10 +36,10 @@ export default function Project3Details() {
           </p>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Objective and Problem Statement</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto rounded-lg"></div>
+          <p className="text-left ml-8">
             Many existing blog platforms are either too complex or lack
             essential features such as customization, real-time interactions,
             and a seamless user experience. This project aims to solve these
@@ -48,10 +48,10 @@ export default function Project3Details() {
           </p>
         </section>
 
-        <section className="text-white flex flex-col justify-center items-center mb-4 px-4">
+        <section className="text-white flex flex-col justify-center items-start mb-4 px-4">
           <span className="text-2xl">Workflow</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto rounded-lg"></div>
-          <ol className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto rounded-lg"></div>
+          <ol className="text-left w-full  ml-8">
             <li className="m-2">
               <span className="text-xl">User Authentication :</span> Users can
               sign up, log in, and log out using JWT-based authentication.
@@ -79,10 +79,10 @@ export default function Project3Details() {
           </ol>
         </section>
 
-        <section className="text-white mb-4 px-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl">Tech Stack used</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto rounded-lg"></div>
-          <ul className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto rounded-lg"></div>
+          <ul className="text-left w-full ml-8">
             <li>Reactjs</li>
             <li>Expressjs</li>
             <li>Nodejs</li>

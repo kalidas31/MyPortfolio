@@ -23,10 +23,10 @@ export default function Project6Details() {
           </span>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Project Introduction</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             The Online Shopping Cart is a web application built using React and
             React Redux that provides users with a seamless e-commerce
             experience. It allows customers to browse products, add items to
@@ -37,10 +37,10 @@ export default function Project6Details() {
           </p>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Objective and Problem Statement</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             Many online shopping websites suffer from performance issues and
             inefficient state management, leading to laggy user interactions and
             slow updates. This project aims to solve these issues by leveraging
@@ -49,10 +49,10 @@ export default function Project6Details() {
           </p>
         </section>
 
-        <section className="text-white flex flex-col justify-center items-center mb-4 px-4">
+        <section className="text-white flex flex-col justify-center items-start mb-4 px-4">
           <span className="text-2xl">Key Features</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ol className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <ol className="text-left w-full ml-8">
             <li className="m-2">
               <span className="text-xl">Product Catalog :</span> Displays a list
               of available products fetched from an API or local JSON data.
@@ -78,10 +78,10 @@ export default function Project6Details() {
           </ol>
         </section>
 
-        <section className="text-white mb-4 px-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl">Tech Stack used</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ul className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <ul className="text-left w-full ml-8">
             <li>• React.js</li>
             <li>• Expressjs</li>
             <li>• Nodejs</li>

@@ -23,10 +23,10 @@ export default function Project5Details() {
           </span>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Project Introduction</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             The Expense Tracker Website is a web application designed to help
             users track and manage their expenses efficiently. Built with modern
             web technologies, the platform allows users to log their income and
@@ -36,10 +36,10 @@ export default function Project5Details() {
           </p>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Objective and Problem Statement</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             Many people struggle to manage their finances effectively due to a
             lack of proper tracking. Traditional methods such as manual logs or
             spreadsheets can be tedious and inefficient. This project aims to
@@ -49,10 +49,10 @@ export default function Project5Details() {
           </p>
         </section>
 
-        <section className="text-white flex flex-col justify-center items-center mb-4 px-4">
+        <section className="text-white flex flex-col justify-center items-start mb-4 px-4">
           <span className="text-2xl">Key Features</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ol className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <ol className="text-left w-full ml-8">
             <li className="m-2">
               <span className="text-xl">User Authentication :</span> Users can
               sign up, log in, and log out using JWT-based authentication.
@@ -71,10 +71,10 @@ export default function Project5Details() {
           </ol>
         </section>
 
-        <section className="text-white mb-4 px-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl">Tech Stack used</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ul className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mx-auto mt-4 rounded-lg"></div>
+          <ul className="text-left w-full ml-8">
             <li>• React.js</li>
             <li>• Expressjs</li>
             <li>• Nodejs</li>

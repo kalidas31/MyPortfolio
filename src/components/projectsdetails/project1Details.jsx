@@ -23,20 +23,20 @@ export default function Project1Details() {
           </span>
         </section>
 
-        <section className="text-white mb-4 mx-4">
-          <span className="text-2xl">Project Introduction</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-auto mr-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-start">
+          <span className="text-2xl ">Project Introduction</span>
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto mt-4 rounded-lg "></div>
+          <p className="text-left ml-8">
             I worked on an Employee Performance and Appraisal System website
             using HTML, CSS for the frontend and Java Servlets, JSP for the
             backend to provide a smooth user experience.
           </p>
         </section>
 
-        <section className="text-white mb-4 mx-4">
-          <span className="text-2xl">Objective and Problem Statement</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-auto mr-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-start">
+          <span className="text-2xl ">Objective and Problem Statement</span>
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 ml-1 mr-auto m-4 mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             The project is a web-based application designed to streamline and
             enhance the performance evaluation process within a college domain.
             The system is built using HTML, CSS, Java Servlets, and JSP
@@ -44,21 +44,21 @@ export default function Project1Details() {
           </p>
         </section>
 
-        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-start">
           <span className="text-2xl">User Roles</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-auto mr-auto mt-4 rounded-lg"></div>
-          <ul className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 ml-1 mr-auto m-4 mt-4 rounded-lg"></div>
+          <ul className="text-left ml-8">
             <li>Principal</li>
             <li>Head of Department (HOD)</li>
             <li>Faculty</li>
           </ul>
         </section>
 
-        <section className="text-white flex flex-col justify-center items-center mb-4 mx-4">
+        <section className="text-white flex flex-col justify-center items-start mb-4 mx-4">
           <span className="text-2xl">Workflow</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-auto mr-auto mt-4 rounded-lg"></div>
-          <ol className="text-left">
-            <li className="m-2">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 ml-1 mr-auto m-4  mt-4 rounded-lg"></div>
+          <ol className="text-left ml-8">
+            <li className=" m-2">
               <span className="text-xl">Appraisal Form Release :</span> Faculty
               members should complete and submit the appraisal form. Submitted
               forms are sent to the respective HOD for review.
@@ -81,10 +81,10 @@ export default function Project1Details() {
           </ol>
         </section>
 
-        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 mx-4 flex flex-col justify-center items-start">
           <span className="text-2xl">Tech Stack Used</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-auto mr-auto mt-4 rounded-lg"></div>
-          <ul className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 ml-1 mr-auto m-4  mt-4 rounded-lg"></div>
+          <ul className="text-left ml-8">
             <li>
               <span className="text-xl">Frontend : </span>HTML, CSS
             </li>

@@ -23,10 +23,10 @@ export default function Project4Details() {
           </span>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Project Introduction</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             • The Food Recipe Application is a user-friendly web platform built
             using React.js, designed to help users explore and discover various
             recipes efficiently. The application features an intuitive interface
@@ -35,10 +35,10 @@ export default function Project4Details() {
           </p>
         </section>
 
-        <section className="text-white mb-4 px-4">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl block text-center">Objective and Problem Statement</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <p className="text-left">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto mt-4 rounded-lg"></div>
+          <p className="text-left ml-8">
             • The application employs React Router for seamless navigation and
             Tailwind CSS for a modern, responsive design. Recipe data can either
             be statically stored or dynamically fetched from an API using Axios
@@ -48,10 +48,10 @@ export default function Project4Details() {
           </p>
         </section>
 
-        <section className="text-white flex flex-col justify-center items-center mb-4 px-4">
+        <section className="text-white flex flex-col justify-center items-start mb-4 px-4">
           <span className="text-2xl">Key Features</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ol className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto mt-4 rounded-lg"></div>
+          <ol className="text-left w-full ml-8">
             <li className="m-2">
               <span className="text-xl">• Homepage :</span> Displays featured or
               trending recipes with high-quality images.
@@ -78,10 +78,10 @@ export default function Project4Details() {
           </ol>
         </section>
 
-        <section className="text-white mb-4 px-4 flex flex-col justify-center items-center">
+        <section className="text-white mb-4 px-4 flex flex-col justify-center items-start">
           <span className="text-2xl">Tech Stack used</span>
-          <div className="w-48 h-1 bg-gradient-to-r from-blue-500 to-pink-500 m-4 mx-auto mt-4 rounded-lg"></div>
-          <ul className="text-left w-full max-w-prose">
+          <div className="w-48 h-0.5 bg-gradient-to-r from-blue-500 to-pink-500 m-4 ml-1 mr-auto mt-4 rounded-lg"></div>
+          <ul className="text-left w-full ml-8">
             <li>• React.js</li>
             <li>• React Router</li>
             <li>• Axios / Fetch API</li>
